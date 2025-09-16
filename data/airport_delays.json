@@ -1,0 +1,569 @@
+{
+  "last_updated": "2024-05-01T20:30:00Z",
+  "airports": [
+    {
+      "iata": "ATL",
+      "name": "Hartsfield-Jackson Atlanta International",
+      "city": "Atlanta",
+      "state": "GA",
+      "latitude": 33.6407,
+      "longitude": -84.4277,
+      "totalFlights": 2620,
+      "delayedFlights": 508,
+      "avgDelayMinutes": 27,
+      "status": "Ground delay program in effect",
+      "weather": "Scattered thunderstorms, 5 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "Delta", "delayedFlights": 212, "avgDelayMinutes": 32 },
+        { "name": "Southwest", "delayedFlights": 94, "avgDelayMinutes": 24 },
+        { "name": "American", "delayedFlights": 71, "avgDelayMinutes": 21 }
+      ],
+      "routes": [
+        {
+          "destination": "LAX",
+          "name": "Los Angeles International",
+          "city": "Los Angeles",
+          "latitude": 33.9416,
+          "longitude": -118.4085,
+          "delayedFlights": 138,
+          "avgDelayMinutes": 41
+        },
+        {
+          "destination": "ORD",
+          "name": "Chicago O'Hare International",
+          "city": "Chicago",
+          "latitude": 41.9742,
+          "longitude": -87.9073,
+          "delayedFlights": 122,
+          "avgDelayMinutes": 33
+        },
+        {
+          "destination": "MCO",
+          "name": "Orlando International",
+          "city": "Orlando",
+          "latitude": 28.4312,
+          "longitude": -81.3081,
+          "delayedFlights": 109,
+          "avgDelayMinutes": 29
+        }
+      ]
+    },
+    {
+      "iata": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "state": "CA",
+      "latitude": 33.9416,
+      "longitude": -118.4085,
+      "totalFlights": 2144,
+      "delayedFlights": 436,
+      "avgDelayMinutes": 31,
+      "status": "Traffic management program",
+      "weather": "Marine layer, 2 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "United", "delayedFlights": 132, "avgDelayMinutes": 36 },
+        { "name": "Alaska", "delayedFlights": 94, "avgDelayMinutes": 28 },
+        { "name": "Delta", "delayedFlights": 86, "avgDelayMinutes": 29 }
+      ],
+      "routes": [
+        {
+          "destination": "SFO",
+          "name": "San Francisco International",
+          "city": "San Francisco",
+          "latitude": 37.6213,
+          "longitude": -122.379,
+          "delayedFlights": 128,
+          "avgDelayMinutes": 45
+        },
+        {
+          "destination": "SEA",
+          "name": "Seattle-Tacoma International",
+          "city": "Seattle",
+          "latitude": 47.4502,
+          "longitude": -122.3088,
+          "delayedFlights": 96,
+          "avgDelayMinutes": 34
+        },
+        {
+          "destination": "JFK",
+          "name": "John F. Kennedy International",
+          "city": "New York",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "delayedFlights": 78,
+          "avgDelayMinutes": 39
+        }
+      ]
+    },
+    {
+      "iata": "ORD",
+      "name": "Chicago O'Hare International",
+      "city": "Chicago",
+      "state": "IL",
+      "latitude": 41.9742,
+      "longitude": -87.9073,
+      "totalFlights": 2088,
+      "delayedFlights": 612,
+      "avgDelayMinutes": 34,
+      "status": "Thunderstorm impacts",
+      "weather": "Thunderstorms passing, 3 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "United", "delayedFlights": 256, "avgDelayMinutes": 38 },
+        { "name": "American", "delayedFlights": 201, "avgDelayMinutes": 35 },
+        { "name": "Spirit", "delayedFlights": 69, "avgDelayMinutes": 32 }
+      ],
+      "routes": [
+        {
+          "destination": "DEN",
+          "name": "Denver International",
+          "city": "Denver",
+          "latitude": 39.8561,
+          "longitude": -104.6737,
+          "delayedFlights": 148,
+          "avgDelayMinutes": 37
+        },
+        {
+          "destination": "ATL",
+          "name": "Hartsfield-Jackson Atlanta International",
+          "city": "Atlanta",
+          "latitude": 33.6407,
+          "longitude": -84.4277,
+          "delayedFlights": 121,
+          "avgDelayMinutes": 30
+        },
+        {
+          "destination": "DFW",
+          "name": "Dallas/Fort Worth International",
+          "city": "Dallas",
+          "latitude": 32.8998,
+          "longitude": -97.0403,
+          "delayedFlights": 97,
+          "avgDelayMinutes": 35
+        }
+      ]
+    },
+    {
+      "iata": "DFW",
+      "name": "Dallas/Fort Worth International",
+      "city": "Dallas",
+      "state": "TX",
+      "latitude": 32.8998,
+      "longitude": -97.0403,
+      "totalFlights": 1895,
+      "delayedFlights": 352,
+      "avgDelayMinutes": 24,
+      "status": "Departure delays 45 min avg",
+      "weather": "Isolated thunderstorms, 6 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "American", "delayedFlights": 188, "avgDelayMinutes": 27 },
+        { "name": "Spirit", "delayedFlights": 58, "avgDelayMinutes": 22 },
+        { "name": "Frontier", "delayedFlights": 37, "avgDelayMinutes": 21 }
+      ],
+      "routes": [
+        {
+          "destination": "ORD",
+          "name": "Chicago O'Hare International",
+          "city": "Chicago",
+          "latitude": 41.9742,
+          "longitude": -87.9073,
+          "delayedFlights": 101,
+          "avgDelayMinutes": 27
+        },
+        {
+          "destination": "DEN",
+          "name": "Denver International",
+          "city": "Denver",
+          "latitude": 39.8561,
+          "longitude": -104.6737,
+          "delayedFlights": 83,
+          "avgDelayMinutes": 26
+        },
+        {
+          "destination": "PHX",
+          "name": "Phoenix Sky Harbor International",
+          "city": "Phoenix",
+          "latitude": 33.4343,
+          "longitude": -112.0116,
+          "delayedFlights": 64,
+          "avgDelayMinutes": 23
+        }
+      ]
+    },
+    {
+      "iata": "DEN",
+      "name": "Denver International",
+      "city": "Denver",
+      "state": "CO",
+      "latitude": 39.8561,
+      "longitude": -104.6737,
+      "totalFlights": 1762,
+      "delayedFlights": 428,
+      "avgDelayMinutes": 29,
+      "status": "Traffic volume delays",
+      "weather": "Low clouds, 4 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "United", "delayedFlights": 186, "avgDelayMinutes": 33 },
+        { "name": "Southwest", "delayedFlights": 119, "avgDelayMinutes": 25 },
+        { "name": "Frontier", "delayedFlights": 71, "avgDelayMinutes": 22 }
+      ],
+      "routes": [
+        {
+          "destination": "SEA",
+          "name": "Seattle-Tacoma International",
+          "city": "Seattle",
+          "latitude": 47.4502,
+          "longitude": -122.3088,
+          "delayedFlights": 91,
+          "avgDelayMinutes": 33
+        },
+        {
+          "destination": "SFO",
+          "name": "San Francisco International",
+          "city": "San Francisco",
+          "latitude": 37.6213,
+          "longitude": -122.379,
+          "delayedFlights": 86,
+          "avgDelayMinutes": 31
+        },
+        {
+          "destination": "LAX",
+          "name": "Los Angeles International",
+          "city": "Los Angeles",
+          "latitude": 33.9416,
+          "longitude": -118.4085,
+          "delayedFlights": 73,
+          "avgDelayMinutes": 28
+        }
+      ]
+    },
+    {
+      "iata": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "state": "NY",
+      "latitude": 40.6413,
+      "longitude": -73.7781,
+      "totalFlights": 1584,
+      "delayedFlights": 412,
+      "avgDelayMinutes": 38,
+      "status": "Ground stop for arrivals",
+      "weather": "Heavy rain, 1.5 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "JetBlue", "delayedFlights": 138, "avgDelayMinutes": 44 },
+        { "name": "Delta", "delayedFlights": 122, "avgDelayMinutes": 36 },
+        { "name": "American", "delayedFlights": 81, "avgDelayMinutes": 34 }
+      ],
+      "routes": [
+        {
+          "destination": "LHR",
+          "name": "London Heathrow",
+          "city": "London",
+          "latitude": 51.4706,
+          "longitude": -0.461941,
+          "delayedFlights": 77,
+          "avgDelayMinutes": 49
+        },
+        {
+          "destination": "LAX",
+          "name": "Los Angeles International",
+          "city": "Los Angeles",
+          "latitude": 33.9416,
+          "longitude": -118.4085,
+          "delayedFlights": 68,
+          "avgDelayMinutes": 41
+        },
+        {
+          "destination": "SFO",
+          "name": "San Francisco International",
+          "city": "San Francisco",
+          "latitude": 37.6213,
+          "longitude": -122.379,
+          "delayedFlights": 61,
+          "avgDelayMinutes": 43
+        }
+      ]
+    },
+    {
+      "iata": "SFO",
+      "name": "San Francisco International",
+      "city": "San Francisco",
+      "state": "CA",
+      "latitude": 37.6213,
+      "longitude": -122.379,
+      "totalFlights": 1420,
+      "delayedFlights": 388,
+      "avgDelayMinutes": 42,
+      "status": "Low ceiling arrival delays",
+      "weather": "Low ceiling, 1.5 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "United", "delayedFlights": 183, "avgDelayMinutes": 46 },
+        { "name": "Alaska", "delayedFlights": 72, "avgDelayMinutes": 37 },
+        { "name": "Delta", "delayedFlights": 61, "avgDelayMinutes": 32 }
+      ],
+      "routes": [
+        {
+          "destination": "SEA",
+          "name": "Seattle-Tacoma International",
+          "city": "Seattle",
+          "latitude": 47.4502,
+          "longitude": -122.3088,
+          "delayedFlights": 96,
+          "avgDelayMinutes": 44
+        },
+        {
+          "destination": "LAX",
+          "name": "Los Angeles International",
+          "city": "Los Angeles",
+          "latitude": 33.9416,
+          "longitude": -118.4085,
+          "delayedFlights": 92,
+          "avgDelayMinutes": 46
+        },
+        {
+          "destination": "DEN",
+          "name": "Denver International",
+          "city": "Denver",
+          "latitude": 39.8561,
+          "longitude": -104.6737,
+          "delayedFlights": 75,
+          "avgDelayMinutes": 39
+        }
+      ]
+    },
+    {
+      "iata": "SEA",
+      "name": "Seattle-Tacoma International",
+      "city": "Seattle",
+      "state": "WA",
+      "latitude": 47.4502,
+      "longitude": -122.3088,
+      "totalFlights": 1283,
+      "delayedFlights": 244,
+      "avgDelayMinutes": 23,
+      "status": "Departure delays 15-30 minutes",
+      "weather": "Low clouds, 3 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "Alaska", "delayedFlights": 109, "avgDelayMinutes": 25 },
+        { "name": "Delta", "delayedFlights": 78, "avgDelayMinutes": 22 },
+        { "name": "Southwest", "delayedFlights": 37, "avgDelayMinutes": 18 }
+      ],
+      "routes": [
+        {
+          "destination": "SFO",
+          "name": "San Francisco International",
+          "city": "San Francisco",
+          "latitude": 37.6213,
+          "longitude": -122.379,
+          "delayedFlights": 84,
+          "avgDelayMinutes": 27
+        },
+        {
+          "destination": "DEN",
+          "name": "Denver International",
+          "city": "Denver",
+          "latitude": 39.8561,
+          "longitude": -104.6737,
+          "delayedFlights": 68,
+          "avgDelayMinutes": 25
+        },
+        {
+          "destination": "LAX",
+          "name": "Los Angeles International",
+          "city": "Los Angeles",
+          "latitude": 33.9416,
+          "longitude": -118.4085,
+          "delayedFlights": 59,
+          "avgDelayMinutes": 23
+        }
+      ]
+    },
+    {
+      "iata": "MCO",
+      "name": "Orlando International",
+      "city": "Orlando",
+      "state": "FL",
+      "latitude": 28.4312,
+      "longitude": -81.3081,
+      "totalFlights": 1182,
+      "delayedFlights": 266,
+      "avgDelayMinutes": 21,
+      "status": "Weather reroutes in progress",
+      "weather": "Scattered thunderstorms, 6 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "Southwest", "delayedFlights": 88, "avgDelayMinutes": 24 },
+        { "name": "Spirit", "delayedFlights": 63, "avgDelayMinutes": 18 },
+        { "name": "Delta", "delayedFlights": 57, "avgDelayMinutes": 19 }
+      ],
+      "routes": [
+        {
+          "destination": "ATL",
+          "name": "Hartsfield-Jackson Atlanta International",
+          "city": "Atlanta",
+          "latitude": 33.6407,
+          "longitude": -84.4277,
+          "delayedFlights": 88,
+          "avgDelayMinutes": 24
+        },
+        {
+          "destination": "EWR",
+          "name": "Newark Liberty International",
+          "city": "Newark",
+          "latitude": 40.6895,
+          "longitude": -74.1745,
+          "delayedFlights": 71,
+          "avgDelayMinutes": 20
+        },
+        {
+          "destination": "BOS",
+          "name": "Logan International",
+          "city": "Boston",
+          "latitude": 42.3656,
+          "longitude": -71.0096,
+          "delayedFlights": 54,
+          "avgDelayMinutes": 18
+        }
+      ]
+    },
+    {
+      "iata": "MIA",
+      "name": "Miami International",
+      "city": "Miami",
+      "state": "FL",
+      "latitude": 25.7959,
+      "longitude": -80.287,
+      "totalFlights": 1240,
+      "delayedFlights": 301,
+      "avgDelayMinutes": 26,
+      "status": "Departure delays 30-45 minutes",
+      "weather": "Humid with thunderstorms nearby",
+      "mostAffectedAirlines": [
+        { "name": "American", "delayedFlights": 161, "avgDelayMinutes": 29 },
+        { "name": "Spirit", "delayedFlights": 52, "avgDelayMinutes": 23 },
+        { "name": "Delta", "delayedFlights": 48, "avgDelayMinutes": 21 }
+      ],
+      "routes": [
+        {
+          "destination": "JFK",
+          "name": "John F. Kennedy International",
+          "city": "New York",
+          "latitude": 40.6413,
+          "longitude": -73.7781,
+          "delayedFlights": 83,
+          "avgDelayMinutes": 30
+        },
+        {
+          "destination": "ATL",
+          "name": "Hartsfield-Jackson Atlanta International",
+          "city": "Atlanta",
+          "latitude": 33.6407,
+          "longitude": -84.4277,
+          "delayedFlights": 74,
+          "avgDelayMinutes": 28
+        },
+        {
+          "destination": "LAX",
+          "name": "Los Angeles International",
+          "city": "Los Angeles",
+          "latitude": 33.9416,
+          "longitude": -118.4085,
+          "delayedFlights": 51,
+          "avgDelayMinutes": 35
+        }
+      ]
+    },
+    {
+      "iata": "BOS",
+      "name": "Logan International",
+      "city": "Boston",
+      "state": "MA",
+      "latitude": 42.3656,
+      "longitude": -71.0096,
+      "totalFlights": 978,
+      "delayedFlights": 215,
+      "avgDelayMinutes": 24,
+      "status": "Arrival delays 15-30 minutes",
+      "weather": "Low clouds and light rain",
+      "mostAffectedAirlines": [
+        { "name": "JetBlue", "delayedFlights": 76, "avgDelayMinutes": 27 },
+        { "name": "Delta", "delayedFlights": 59, "avgDelayMinutes": 24 },
+        { "name": "American", "delayedFlights": 44, "avgDelayMinutes": 21 }
+      ],
+      "routes": [
+        {
+          "destination": "LGA",
+          "name": "LaGuardia Airport",
+          "city": "New York",
+          "latitude": 40.7769,
+          "longitude": -73.874,
+          "delayedFlights": 63,
+          "avgDelayMinutes": 26
+        },
+        {
+          "destination": "DCA",
+          "name": "Ronald Reagan Washington National",
+          "city": "Washington",
+          "latitude": 38.8512,
+          "longitude": -77.0402,
+          "delayedFlights": 51,
+          "avgDelayMinutes": 23
+        },
+        {
+          "destination": "ORD",
+          "name": "Chicago O'Hare International",
+          "city": "Chicago",
+          "latitude": 41.9742,
+          "longitude": -87.9073,
+          "delayedFlights": 44,
+          "avgDelayMinutes": 25
+        }
+      ]
+    },
+    {
+      "iata": "PHX",
+      "name": "Phoenix Sky Harbor International",
+      "city": "Phoenix",
+      "state": "AZ",
+      "latitude": 33.4343,
+      "longitude": -112.0116,
+      "totalFlights": 1122,
+      "delayedFlights": 187,
+      "avgDelayMinutes": 19,
+      "status": "High winds, expect gate holds",
+      "weather": "Blowing dust, 6 mi visibility",
+      "mostAffectedAirlines": [
+        { "name": "American", "delayedFlights": 94, "avgDelayMinutes": 21 },
+        { "name": "Southwest", "delayedFlights": 52, "avgDelayMinutes": 17 },
+        { "name": "Frontier", "delayedFlights": 21, "avgDelayMinutes": 15 }
+      ],
+      "routes": [
+        {
+          "destination": "DEN",
+          "name": "Denver International",
+          "city": "Denver",
+          "latitude": 39.8561,
+          "longitude": -104.6737,
+          "delayedFlights": 56,
+          "avgDelayMinutes": 21
+        },
+        {
+          "destination": "DFW",
+          "name": "Dallas/Fort Worth International",
+          "city": "Dallas",
+          "latitude": 32.8998,
+          "longitude": -97.0403,
+          "delayedFlights": 44,
+          "avgDelayMinutes": 19
+        },
+        {
+          "destination": "SEA",
+          "name": "Seattle-Tacoma International",
+          "city": "Seattle",
+          "latitude": 47.4502,
+          "longitude": -122.3088,
+          "delayedFlights": 39,
+          "avgDelayMinutes": 20
+        }
+      ]
+    }
+  ]
+}
