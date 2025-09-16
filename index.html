@@ -1,4 +1,5 @@
 <html lang="en">
+codex/improve-real-time-flight-delay-map
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Realtime US Flight Delay Map</title>
@@ -82,4 +83,90 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin></script>
   <script src="assets/js/airportData.js"></script>
   <script src="assets/js/app.js"></script>
-</html>
+=======
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>U.S. Flight Delay Heatmap</title>
+    <meta
+      name="description"
+      content="Explore a real-time map of U.S. airport delays with live severity coloring and the routes experiencing the most significant disruptions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha512-sA+4PD8X1pU8w7G7QSkUuRk6H4/6nPW0n8lLOG3FzjGgBgv984wgKLF6ig84yYI6F4n13C7C+7D1lCG4w2zYkw=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="map-container">
+        <div id="map"></div>
+        <div id="loading-indicator">
+          <span class="spinner"></span>
+          <span>Loading delay data…</span>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <div class="header">
+          <h1>U.S. Flight Delay Heatmap</h1>
+          <p>Real-time monitoring of nationwide airport performance and disruption hotspots.</p>
+          <span id="last-updated">Last updated —</span>
+        </div>
+        <div class="summary-cards">
+          <div class="summary-card">
+            <h3>Avg Delay</h3>
+            <span class="value" id="summary-avg-delay">--</span>
+            <span class="subtext">Across tracked airports</span>
+          </div>
+          <div class="summary-card">
+            <h3>Delayed Flights</h3>
+            <span class="value" id="summary-total-delayed">--</span>
+            <span class="subtext">Out of <span id="summary-total-flights">--</span> flights</span>
+          </div>
+          <div class="summary-card">
+            <h3>Delay Rate</h3>
+            <span class="value" id="summary-national-delay">--</span>
+            <span class="subtext">Share of flights delayed</span>
+          </div>
+          <div class="summary-card">
+            <h3>Hotspot</h3>
+            <span class="value" id="summary-worst-delay">--</span>
+            <span class="subtext" id="summary-worst-airport"></span>
+          </div>
+          <div class="summary-card">
+            <h3>Best Performance</h3>
+            <span class="value" id="summary-best-delay">--</span>
+            <span class="subtext" id="summary-best-airport"></span>
+          </div>
+        </div>
+        <div class="legend">
+          <h2>Delay intensity</h2>
+          <div class="legend-scale"></div>
+          <p class="legend-note">Marker size scales with total tracked flights. Colors represent the share of flights delayed.</p>
+        </div>
+        <div class="airport-list">
+          <h2>Delay leaders</h2>
+          <ul></ul>
+        </div>
+        <div class="details-panel" id="details-panel">
+          <div class="empty-state">Select an airport to inspect current delays.</div>
+        </div>
+      </aside>
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdlxU8v+4J0u06PpF1hbQyT2B3p7rjzQo2RbFjX0zE2Aq6X5IOd0zZM75Ge8lG8Jd1w4nU96Uig=="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="assets/app.js" defer></script>
+  </body>
