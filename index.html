@@ -1,4 +1,89 @@
 <html lang="en">
+codex/improve-real-time-flight-delay-map
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realtime US Flight Delay Map</title>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preconnect" href="https://{s}.basemaps.cartocdn.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <div id="map" role="presentation" aria-hidden="true"></div>
+  <aside id="info-panel" aria-label="Flight delay insights">
+    <div class="panel-inner">
+      <div class="panel-header">
+        <h1>Realtime Flight Delay Map</h1>
+        <button id="refresh-btn" type="button" aria-live="polite">
+          <span class="spinner" aria-hidden="true"></span>
+          <span class="label">Refresh</span>
+        </button>
+      </div>
+      <div class="update-meta">
+        <div id="last-updated">Updated —</div>
+        <div class="badges">
+          <span id="live-indicator" class="badge live">Live FAA feed</span>
+        </div>
+        <div class="data-source">Source: FAA Air Traffic Status (live where available) + historical performance snapshot.</div>
+      </div>
+      <div id="notification" role="alert"></div>
+      <section id="selected-airport" aria-live="polite">
+        <div class="airport-heading">
+          <span id="airport-code" class="airport-code">—</span>
+          <div>
+            <h2 id="airport-name">Select an airport</h2>
+            <p id="airport-location" class="subtitle">Tap a marker to load live delay details.</p>
+          </div>
+        </div>
+        <div id="airport-updated" class="subtitle small">Awaiting data…</div>
+        <div id="delay-chip" class="status-chip" data-state="on-time">On time</div>
+        <div class="metrics-grid" role="group" aria-label="Delay metrics">
+          <div class="metric">
+            <span class="metric-label">Avg delay</span>
+            <span class="metric-value" id="avg-delay">—</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Max delay</span>
+            <span class="metric-value" id="max-delay">—</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Min delay</span>
+            <span class="metric-value" id="min-delay">—</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Trend</span>
+            <span class="metric-value" id="delay-trend">—</span>
+          </div>
+        </div>
+        <div class="status-details" aria-live="polite">
+          <h3>Delay details</h3>
+          <p id="status-reason">Select an airport marker to view live delay information.</p>
+        </div>
+        <div class="status-details">
+          <h3>Current weather</h3>
+          <p id="weather-summary">Not reported</p>
+          <p id="weather-wind" class="subtitle"></p>
+        </div>
+        <div class="routes-section">
+          <h3>Most impacted routes</h3>
+          <div id="route-insight" class="route-list">
+            <p class="empty-state">Select an airport to visualise the routes driving its delays.</p>
+          </div>
+        </div>
+      </section>
+      <section class="legend" aria-label="Delay severity legend">
+        <h3>Delay scale (avg minutes)</h3>
+        <ul>
+          <li><span class="swatch on-time" aria-hidden="true"></span> On time</li>
+          <li><span class="swatch low" aria-hidden="true"></span> Minor &lt; 10 min</li>
+          <li><span class="swatch medium" aria-hidden="true"></span> Moderate 10–24 min</li>
+          <li><span class="swatch high" aria-hidden="true"></span> Severe ≥ 25 min</li>
+        </ul>
+      </section>
+    </div>
+  </aside>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin></script>
+  <script src="assets/js/airportData.js"></script>
+  <script src="assets/js/app.js"></script>
+=======
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -85,4 +170,3 @@
     ></script>
     <script src="assets/app.js" defer></script>
   </body>
-</html>
